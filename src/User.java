@@ -7,17 +7,15 @@ public class User {
         this.acount = new Acount(password);
     }
 
-    class Acount{
+    class Acount {
         private String password;
+
         public void displayAccount() {
-            System.out.println(login);
-            System.out.println(password);
+            System.out.printf("Account Login successful! Login: %s, Password: %s\n", login, password);
         }
 
         public Acount(String password) {
             this.password = password;
         }
-
-
     }
 }
